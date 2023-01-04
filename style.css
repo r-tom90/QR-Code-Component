@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --primary-white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+
+  --font: "Outfit", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--light-gray);
+  text-align: center;
+  /* border: 1px solid green; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  margin: 5rem auto;
+}
+
+.qr-code {
+  width: 100%;
+  border-radius: 15px;
+  max-height: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  max-height: 80rem;
+  margin: 0 auto;
+  background-color: var(--primary-white);
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.product-info {
+  padding: 0.5rem 1rem;
+  font-family: var(--font);
+}
+
+.product-info h1 {
+  font-size: 1.35rem;
+  color: var(--dark-blue);
+}
+
+.product-info p {
+  color: var(--grayish-blue);
+}
+/* Frontend Mentor Styling */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 376px) {
+  .card {
+    width: 22rem;
+    max-height: 84rem;
+  }
+}
